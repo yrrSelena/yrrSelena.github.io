@@ -98,7 +98,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/03/09/github_Hexo/10.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/09/github_Hexo/11.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/09/github_Hexo/12.png">
-<meta property="og:updated_time" content="2018-03-10T04:52:44.054Z">
+<meta property="og:updated_time" content="2018-03-10T05:11:45.221Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github+Hexo">
 <meta name="twitter:description" content="博客搭建（github+Hexo）主要参照：https://www.jianshu.com/p/863f3f2d1733 一、环境搭建1.安装git：官网(http://git-scm.com) 2.安装Node.js：官网(https://nodejs.org/en/) 二、安装配置Hexo1.选定一个安装目录，创建一个名为Hexo的文件夹。在该文件夹中，选择“文件”-&amp;gt;“打开命令提示符”">
@@ -316,37 +316,37 @@
 <h2 id="一、环境搭建"><a href="#一、环境搭建" class="headerlink" title="一、环境搭建"></a>一、环境搭建</h2><p>1.安装git：官网(<a href="https://link.jianshu.com/?t=http://git-scm.com" target="_blank" rel="noopener">http://git-scm.com</a>)</p>
 <p>2.安装Node.js：官网(<a href="https://link.jianshu.com/?t=https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a>)</p>
 <h2 id="二、安装配置Hexo"><a href="#二、安装配置Hexo" class="headerlink" title="二、安装配置Hexo"></a>二、安装配置Hexo</h2><p>1.选定一个安装目录，创建一个名为Hexo的文件夹。在该文件夹中，选择“文件”-&gt;“打开命令提示符”</p>
-<p><img src="/2018/03/09/github_Hexo/1.png" alt=""></p>
+<p><img src="/2018/03/09/github_Hexo/1.png" alt="1"></p>
 <p>得到如下终端，以下命令均在此终端运行。</p>
-<p><img src="/2018/03/09/github_Hexo/2.png" alt=""></p>
+<p><img src="/2018/03/09/github_Hexo/2.png" alt="2"></p>
 <p>2.使用npm安装Hexo</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <p>安装好Hexo后，输入：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 <p>成功后得到的Hexo文件夹中包含以下内容：</p>
-<p><img src="/2018/03/09/github_Hexo/3.png" alt=""></p>
+<p><img src="/2018/03/09/github_Hexo/3.png" alt="3"></p>
 <p>3.启动本地Hexo服务</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p><img src="/2018/03/09/github_Hexo/4.png" alt=""></p>
+<p><img src="/2018/03/09/github_Hexo/4.png" alt="4"></p>
 <p>打开浏览器，输入<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> ，出现下图表示Hexo安装成功</p>
-<p><img src="/2018/03/09/github_Hexo/5.png" alt=""></p>
+<p><img src="/2018/03/09/github_Hexo/5.png" alt="5"></p>
 <p>更改主题</p>
 <h2 id="三、配置github仓库"><a href="#三、配置github仓库" class="headerlink" title="三、配置github仓库"></a>三、配置github仓库</h2><h3 id="1-创建仓库"><a href="#1-创建仓库" class="headerlink" title="1 创建仓库"></a>1 创建仓库</h3><p>(1)进入github官网 <a href="https://link.jianshu.com/?t=http://www.github.com" target="_blank" rel="noopener">http://www.github.com</a> ，登录账号，创建一个放博客文章的仓库</p>
 <p>(2)点击New repository</p>
 <p>(3)输入Repository name ，仓库名称格式必须为：用户名.github.io，如下图</p>
-<p><img src="/2018/03/09/github_Hexo/6.png" alt=""></p>
+<p><img src="/2018/03/09/github_Hexo/6.png" alt="6"></p>
 <h3 id="2-配置SSH"><a href="#2-配置SSH" class="headerlink" title="2 配置SSH"></a>2 配置SSH</h3><p>(1)在Hexo文件夹下，右击选择“Git Bash Here”，进入终端：</p>
 <p>(2)输入命令得到下图：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
-<p><img src="/2018/03/09/github_Hexo/7.png" alt=""></p>
+<p><img src="/2018/03/09/github_Hexo/7.png" alt="7"></p>
 <p>(3)看到上面的提示，敲回车</p>
 <p>(4)然后显示设置密码，输入密码并确认密码</p>
 <p>(5)在文件夹<code>\.ssh</code>中生成得到两个文件：<code>id_rsa</code> 和 <code>id_rsa.pub</code>，<code>id_rsa.pub</code>里存放的就是SSH key的内容</p>
 <p>(6)打开github，点击”Setting”-&gt;”SSH and GPG Keys”-&gt;”New SSH key”，将<code>id_rsa.pub</code>里的内容复制到”Key”，（”Title”可以随便定义）</p>
-<p><img src="/2018/03/09/github_Hexo/8.png" alt=""></p>
+<p><img src="/2018/03/09/github_Hexo/8.png" alt="8"></p>
 <p>(7)判断SSH是否配置好，出现下图提示表示SSH已配置好</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<p><img src="/2018/03/09/github_Hexo/9.png" alt=""></p>
+<p><img src="/2018/03/09/github_Hexo/9.png" alt="9"></p>
 <h3 id="3-配置Hexo"><a href="#3-配置Hexo" class="headerlink" title="3 配置Hexo"></a>3 配置Hexo</h3><p>(1)打开文件夹Hexo中的<code>_config.yml</code>，修改配置并保存</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: http://github.com/yrrSelena/yrrSelena.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>注意：</p>
@@ -354,9 +354,9 @@
 <p>【2】输入的是https而不是http</p>
 <p>(2)在终端下依次输入以下命令，结果如下图</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p><img src="/2018/03/09/github_Hexo/10.png" alt=""></p>
-<p><img src="/2018/03/09/github_Hexo/11.png" alt=""></p>
-<p><img src="/2018/03/09/github_Hexo/12.png" alt=""></p>
+<p><img src="/2018/03/09/github_Hexo/10.png" alt="10"></p>
+<p><img src="/2018/03/09/github_Hexo/11.png" alt="11"></p>
+<p><img src="/2018/03/09/github_Hexo/12.png" alt="12"></p>
 <p>【出现过的问题】</p>
 <p>· 第一次上传时，需要输入以下命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;rr.ying@foxmail.com&quot;</span><br><span class="line">git config --global user.name &quot;yrrSelena&quot;</span><br></pre></td></tr></table></figure>
